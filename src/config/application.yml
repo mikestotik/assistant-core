@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=./schema.json
+app:
+  name: 'Assistant AI'
+  description: 'Your personal AI Assistant'
+  version: '1.0'
+server:
+  host: '127.0.0.1'
+  port: 3000
+  api:
+    globalPrefix: 'api'
+    version: '1.0'
+  cors:
+    origin:
+      - http://localhost:5173
+      - http://127.0.0.1:5173
+  uploads:
+    maxSize: '3mb'
+auth:
+  jwt:
+    access:
+      secret: 'secret'
+      ttl: '1d'
+    refresh:
+      secret: 'secret'
+      ttl: '7d'
+crypto:
+  saltOrRounds: 10
+  secret: 'secret'
+database:
+  type: postgres
+  url:
+  host: 127.0.0.1
+  port: 5432
+  name: assistant
+  username: assistant
+  password: assistant
+  dropSchema: false
+  logging: true
+  synchronize: true
+  maxConnections: 100
+mongo:
+  protocol: 'mongodb'
+  host: '127.0.0.1'
+  port: 27017
+  database: 'assistant'
+  username: 'assistant'
+  password: 'assistant'
+mail:
+  host: 'mail.domain.com'
+  port: 587
+  secure: false
+  debug: true
+  logger: true
+  auth:
+    type: 'LOGIN'
+    user: 'username@domain.com'
+    pass: 'password'
+push:
+  vapid:
+    subject: 'mailto:noreply@domain.com'
+    public: 'secret'
+    private: 'secret'
+google:
+  clientId: 'clientId'
+  clientSecret: 'clientSecret'
+  callbackUrl: 'callbackUrl'
+  apiUrl: 'https://www.googleapis.com/auth'
+  apiKey: 'apiKey'
+  scope:
+    - profile
+    - email
+langchain:
+  apiKey: 'apiKey'
+openai:
+  apiKey: 'apiKey'
+telegram:
+  token: 'token'
+github:
+  token: 'token'
+client:
+  web:
+    url: 'http://localhost:5173'
+    updatePassword: '/auth/update-password'
+    emailConfirmation: '/auth/email-confirmation'
+    ssoRedirectRoute: '/auth/sso'
+    confirmation: '/confirmation'

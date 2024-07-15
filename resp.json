@@ -1,0 +1,4432 @@
+[
+  {
+    run_id: '7b5c65bf-c7d1-4cbc-acdc-10c2e8dc0655',
+    event: 'on_chain_start',
+    name: 'AgentExecutor',
+    tags: [],
+    metadata: {},
+    data: { input: { input: 'Напиши простой пример кода на Rust' } }
+  }
+  {
+    event: 'on_chain_start',
+    name: 'OpenAIFunctionsAgent',
+    run_id: 'c56dffe6-a501-420b-8d4d-604cf5f7d7bc',
+    tags: [],
+    metadata: {},
+    data: { input: 'Напиши простой пример кода на Rust' }
+  }
+  {
+    event: 'on_chain_start',
+    name: 'RunnableAssign',
+    run_id: '53966d2b-56b7-4561-bdf4-27a22da803d6',
+    tags: [ 'seq:step:1' ],
+    metadata: {},
+    data: {}
+  }
+  {
+    event: 'on_chain_stream',
+    name: 'RunnableAssign',
+    run_id: '53966d2b-56b7-4561-bdf4-27a22da803d6',
+    tags: [ 'seq:step:1' ],
+    metadata: {},
+    data: { chunk: { input: 'Напиши простой пример кода на Rust', steps: [] } }
+  }
+  {
+    event: 'on_chain_start',
+    name: 'RunnableMap',
+    run_id: '6481323b-062c-4b03-82fe-a03b12cf4abe',
+    tags: [],
+    metadata: {},
+    data: {}
+  }
+  {
+    event: 'on_chain_start',
+    name: 'RunnableLambda',
+    run_id: 'deb6b7a0-979f-4a97-bc34-1dbe94e71972',
+    tags: [ 'map:key:agent_scratchpad' ],
+    metadata: {},
+    data: {}
+  }
+  {
+    event: 'on_chain_stream',
+    name: 'RunnableLambda',
+    run_id: 'deb6b7a0-979f-4a97-bc34-1dbe94e71972',
+    tags: [ 'map:key:agent_scratchpad' ],
+    metadata: {},
+    data: { chunk: [] }
+  }
+  {
+    event: 'on_chain_stream',
+    name: 'RunnableMap',
+    run_id: '6481323b-062c-4b03-82fe-a03b12cf4abe',
+    tags: [],
+    metadata: {},
+    data: { chunk: { agent_scratchpad: [] } }
+  }
+  {
+    event: 'on_chain_stream',
+    name: 'RunnableAssign',
+    run_id: '53966d2b-56b7-4561-bdf4-27a22da803d6',
+    tags: [ 'seq:step:1' ],
+    metadata: {},
+    data: { chunk: { agent_scratchpad: [] } }
+  }
+  {
+    event: 'on_chain_end',
+    name: 'RunnableLambda',
+    run_id: 'deb6b7a0-979f-4a97-bc34-1dbe94e71972',
+    tags: [ 'map:key:agent_scratchpad' ],
+    metadata: {},
+    data: { input: 'Напиши простой пример кода на Rust', output: [] }
+  }
+  {
+    event: 'on_chain_end',
+    name: 'RunnableMap',
+    run_id: '6481323b-062c-4b03-82fe-a03b12cf4abe',
+    tags: [],
+    metadata: {},
+    data: {
+      input: 'Напиши простой пример кода на Rust',
+      output: { agent_scratchpad: [] }
+    }
+  }
+  {
+    event: 'on_chain_end',
+    name: 'RunnableAssign',
+    run_id: '53966d2b-56b7-4561-bdf4-27a22da803d6',
+    tags: [ 'seq:step:1' ],
+    metadata: {},
+    data: {
+      input: 'Напиши простой пример кода на Rust',
+      output: {
+        input: 'Напиши простой пример кода на Rust',
+        steps: [],
+        agent_scratchpad: []
+      }
+    }
+  }
+  {
+    event: 'on_prompt_start',
+    name: 'ChatPromptTemplate',
+    run_id: 'b5b91fcf-9b25-4b4f-b796-a8a6c059c6a3',
+    tags: [ 'seq:step:2' ],
+    metadata: {},
+    data: {
+      input: {
+        input: 'Напиши простой пример кода на Rust',
+        steps: [],
+        agent_scratchpad: []
+      }
+    }
+  }
+  {
+    event: 'on_prompt_end',
+    name: 'ChatPromptTemplate',
+    run_id: 'b5b91fcf-9b25-4b4f-b796-a8a6c059c6a3',
+    tags: [ 'seq:step:2' ],
+    metadata: {},
+    data: {
+      input: {
+        input: 'Напиши простой пример кода на Rust',
+        steps: [],
+        agent_scratchpad: []
+      },
+      output: ChatPromptValue {
+  lc_serializable: true,
+  lc_kwargs: {
+    messages: [
+      SystemMessage {
+        lc_serializable: true,
+        lc_kwargs: {
+          content: 'You are a helpful assistant',
+          additional_kwargs: {},
+          response_metadata: {}
+        },
+        lc_namespace: [ 'langchain_core', 'messages' ],
+        content: 'You are a helpful assistant',
+        name: undefined,
+        additional_kwargs: {},
+        response_metadata: {},
+        id: undefined
+      },
+      HumanMessage {
+        lc_serializable: true,
+        lc_kwargs: {
+          content: 'Напиши простой пример кода на Rust',
+          additional_kwargs: {},
+          response_metadata: {}
+        },
+        lc_namespace: [ 'langchain_core', 'messages' ],
+        content: 'Напиши простой пример кода на Rust',
+        name: undefined,
+        additional_kwargs: {},
+        response_metadata: {},
+        id: undefined
+      }
+    ]
+  },
+  lc_namespace: [ 'langchain_core', 'prompt_values' ],
+  messages: [
+    SystemMessage {
+      lc_serializable: true,
+      lc_kwargs: {
+        content: 'You are a helpful assistant',
+        additional_kwargs: {},
+        response_metadata: {}
+      },
+      lc_namespace: [ 'langchain_core', 'messages' ],
+      content: 'You are a helpful assistant',
+      name: undefined,
+      additional_kwargs: {},
+      response_metadata: {},
+      id: undefined
+    },
+    HumanMessage {
+      lc_serializable: true,
+      lc_kwargs: {
+        content: 'Напиши простой пример кода на Rust',
+        additional_kwargs: {},
+        response_metadata: {}
+      },
+      lc_namespace: [ 'langchain_core', 'messages' ],
+      content: 'Напиши простой пример кода на Rust',
+      name: undefined,
+      additional_kwargs: {},
+      response_metadata: {},
+      id: undefined
+    }
+  ]
+}
+}
+}
+  {
+    event: 'on_llm_start',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      input: {
+        messages: [
+          [
+            SystemMessage {
+            lc_serializable: true,
+            lc_kwargs: {
+              content: 'You are a helpful assistant',
+              additional_kwargs: {},
+              response_metadata: {}
+            },
+            lc_namespace: [ 'langchain_core', 'messages' ],
+            content: 'You are a helpful assistant',
+            name: undefined,
+            additional_kwargs: {},
+            response_metadata: {},
+            id: undefined
+          },
+            HumanMessage {
+            lc_serializable: true,
+            lc_kwargs: {
+              content: 'Напиши простой пример кода на Rust',
+              additional_kwargs: {},
+              response_metadata: {}
+            },
+            lc_namespace: [ 'langchain_core', 'messages' ],
+            content: 'Напиши простой пример кода на Rust',
+            name: undefined,
+            additional_kwargs: {},
+            response_metadata: {},
+            id: undefined
+          }
+          ]
+        ]
+      }
+    }
+  }
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'К',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'К',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'он',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'он',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ечно',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ечно',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ',',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ',',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' вот',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' вот',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' прост',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' прост',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ой',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ой',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' пример',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' пример',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' код',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' код',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'а',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'а',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' на',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' на',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' Rust',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' Rust',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ':\n\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ':\n\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '```',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '```',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'rust',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'rust',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'fn',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'fn',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' main',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' main',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '()',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '()',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' {\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' {\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '   ',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '   ',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' println',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' println',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '!("',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '!("',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'Пр',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'Пр',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ив',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ив',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ет',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ет',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '!");\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '!");\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '}\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '}\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '``',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '``',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '`\n\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '`\n\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'В',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'В',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' этом',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' этом',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' пример',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' пример',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'е',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'е',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ',',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ',',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' `',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' `',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'main',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'main',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '()`',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '()`',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' функци',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' функци',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'я',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'я',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' является',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' является',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' глав',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' глав',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ным',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ным',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' б',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' б',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ай',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ай',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'т',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'т',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '-',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '-',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'к',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'к',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'од',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'од',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ом',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ом',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' для',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' для',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' нашего',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' нашего',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' программы',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' программы',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '.',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '.',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' После',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' После',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' выз',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' выз',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ова',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ова',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' функци',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' функци',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'и',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'и',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' `',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' `',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'main',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'main',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '()',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '()',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '`,',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '`,',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' програм',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' програм',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ма',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ма',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' зап',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' зап',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'уст',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'уст',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ится',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ится',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' и',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' и',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' вы',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' вы',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'вед',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'вед',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ет',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ет',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' строк',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' строк',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'у',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'у',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' "',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' "',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'Пр',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'Пр',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ив',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ив',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ет',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ет',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '!"',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '!"',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' на',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' на',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' экран',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' экран',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '.\n\n',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '.\n\n',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'Е',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'Е',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'сли',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'сли',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' вы',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' вы',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' хотите',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' хотите',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' узнать',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' узнать',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' больше',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' больше',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' о',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' о',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' Rust',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' Rust',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ',',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ',',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' можете',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' можете',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' по',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' по',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'смотреть',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'смотреть',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' документ',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' документ',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ацию',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ацию',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' или',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' или',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' видео',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' видео',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '-',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '-',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ур',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ур',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'ок',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'ок',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: 'и',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: 'и',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' в',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' в',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' сети',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' сети',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: ' интернет',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: ' интернет',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_stream',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      chunk: AIMessageChunk {
+  lc_serializable: true,
+  lc_kwargs: {
+    content: '.',
+    tool_calls: [],
+    invalid_tool_calls: [],
+    tool_call_chunks: [],
+    additional_kwargs: {},
+    response_metadata: {}
+  },
+  lc_namespace: [ 'langchain_core', 'messages' ],
+  content: '.',
+  name: undefined,
+  additional_kwargs: {},
+  response_metadata: {},
+  id: undefined,
+  tool_calls: [],
+  invalid_tool_calls: [],
+  tool_call_chunks: [],
+  usage_metadata: undefined
+}
+  }
+}
+  {
+    event: 'on_llm_end',
+    name: 'ChatOllama',
+    run_id: 'c6328269-3d49-4b12-846e-f98bba879784',
+    tags: [ 'seq:step:3' ],
+    metadata: {
+      ls_provider: 'ollama',
+      ls_model_name: 'qwen2:1.5b',
+      ls_model_type: 'chat',
+      ls_temperature: undefined,
+      ls_stop: undefined,
+      ls_max_tokens: undefined
+    },
+    data: {
+      input: {
+        messages: [
+          [
+            SystemMessage {
+            lc_serializable: true,
+            lc_kwargs: {
+              content: 'You are a helpful assistant',
+              additional_kwargs: {},
+              response_metadata: {}
+            },
+            lc_namespace: [ 'langchain_core', 'messages' ],
+            content: 'You are a helpful assistant',
+            name: undefined,
+            additional_kwargs: {},
+            response_metadata: {},
+            id: undefined
+          },
+            HumanMessage {
+            lc_serializable: true,
+            lc_kwargs: {
+              content: 'Напиши простой пример кода на Rust',
+              additional_kwargs: {},
+              response_metadata: {}
+            },
+            lc_namespace: [ 'langchain_core', 'messages' ],
+            content: 'Напиши простой пример кода на Rust',
+            name: undefined,
+            additional_kwargs: {},
+            response_metadata: {},
+            id: undefined
+          }
+          ]
+        ]
+      },
+      output: {
+        generations: [
+          [
+            ChatGenerationChunk {
+            text: 'Конечно, вот простой пример кода на Rust:\n' +
+            '\n' +
+            '```rust\n' +
+            'fn main() {\n' +
+            '    println!("Привет!");\n' +
+            '}\n' +
+            '```\n' +
+            '\n' +
+            'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+            '\n' +
+            'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.',
+            generationInfo: {
+              model: 'qwen2:1.5b',
+              total_duration: 9944956588,
+              load_duration: 1443949,
+              prompt_eval_count: 16,
+              prompt_eval_duration: 383782000,
+              eval_count: 107,
+              eval_duration: 9557137000
+            },
+            message: AIMessageChunk {
+            lc_serializable: true,
+            lc_kwargs: {
+              content: 'Конечно, вот простой пример кода на Rust:\n' +
+              '\n' +
+              '```rust\n' +
+              'fn main() {\n' +
+              '    println!("Привет!");\n' +
+              '}\n' +
+              '```\n' +
+              '\n' +
+              'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+              '\n' +
+              'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.',
+              additional_kwargs: {},
+              response_metadata: {
+                model: 'qwen2:1.5b',
+                total_duration: 9944956588,
+                load_duration: 1443949,
+                prompt_eval_count: 16,
+                prompt_eval_duration: 383782000,
+                eval_count: 107,
+                eval_duration: 9557137000
+              },
+              tool_call_chunks: [],
+              id: undefined,
+              tool_calls: [],
+              invalid_tool_calls: []
+            },
+            lc_namespace: [ 'langchain_core', 'messages' ],
+            content: 'Конечно, вот простой пример кода на Rust:\n' +
+            '\n' +
+            '```rust\n' +
+            'fn main() {\n' +
+            '    println!("Привет!");\n' +
+            '}\n' +
+            '```\n' +
+            '\n' +
+            'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+            '\n' +
+            'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.',
+            name: undefined,
+            additional_kwargs: {},
+            response_metadata: {
+              model: 'qwen2:1.5b',
+              total_duration: 9944956588,
+              load_duration: 1443949,
+              prompt_eval_count: 16,
+              prompt_eval_duration: 383782000,
+              eval_count: 107,
+              eval_duration: 9557137000
+            },
+            id: undefined,
+            tool_calls: [],
+            invalid_tool_calls: [],
+            tool_call_chunks: [],
+            usage_metadata: undefined
+          }
+          }
+          ]
+        ]
+      }
+    }
+  }
+  {
+    event: 'on_parser_start',
+    name: 'OpenAIFunctionsAgentOutputParser',
+    run_id: '1bf3b3fd-5807-402b-b311-a7b4b6986e31',
+    tags: [ 'seq:step:4' ],
+    metadata: {},
+    data: {}
+  }
+  {
+    event: 'on_parser_end',
+    name: 'OpenAIFunctionsAgentOutputParser',
+    run_id: '1bf3b3fd-5807-402b-b311-a7b4b6986e31',
+    tags: [ 'seq:step:4' ],
+    metadata: {},
+    data: {
+      output: {
+        returnValues: {
+          output: 'Конечно, вот простой пример кода на Rust:\n' +
+          '\n' +
+          '```rust\n' +
+          'fn main() {\n' +
+          '    println!("Привет!");\n' +
+          '}\n' +
+          '```\n' +
+          '\n' +
+          'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+          '\n' +
+          'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+        },
+        log: 'Конечно, вот простой пример кода на Rust:\n' +
+        '\n' +
+        '```rust\n' +
+        'fn main() {\n' +
+        '    println!("Привет!");\n' +
+        '}\n' +
+        '```\n' +
+        '\n' +
+        'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+        '\n' +
+        'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+      }
+    }
+  }
+  {
+    event: 'on_chain_end',
+    name: 'OpenAIFunctionsAgent',
+    run_id: 'c56dffe6-a501-420b-8d4d-604cf5f7d7bc',
+    tags: [],
+    metadata: {},
+    data: {
+      input: 'Напиши простой пример кода на Rust',
+      output: {
+        returnValues: {
+          output: 'Конечно, вот простой пример кода на Rust:\n' +
+          '\n' +
+          '```rust\n' +
+          'fn main() {\n' +
+          '    println!("Привет!");\n' +
+          '}\n' +
+          '```\n' +
+          '\n' +
+          'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+          '\n' +
+          'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+        },
+        log: 'Конечно, вот простой пример кода на Rust:\n' +
+        '\n' +
+        '```rust\n' +
+        'fn main() {\n' +
+        '    println!("Привет!");\n' +
+        '}\n' +
+        '```\n' +
+        '\n' +
+        'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+        '\n' +
+        'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+      }
+    }
+  }
+  {
+    event: 'on_chain_stream',
+    run_id: '7b5c65bf-c7d1-4cbc-acdc-10c2e8dc0655',
+    tags: [],
+    metadata: {},
+    name: 'AgentExecutor',
+    data: {
+      chunk: {
+        output: 'Конечно, вот простой пример кода на Rust:\n' +
+        '\n' +
+        '```rust\n' +
+        'fn main() {\n' +
+        '    println!("Привет!");\n' +
+        '}\n' +
+        '```\n' +
+        '\n' +
+        'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+        '\n' +
+        'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+      }
+    }
+  }
+  {
+    event: 'on_chain_end',
+    name: 'AgentExecutor',
+    run_id: '7b5c65bf-c7d1-4cbc-acdc-10c2e8dc0655',
+    tags: [],
+    metadata: {},
+    data: {
+      output: 'Конечно, вот простой пример кода на Rust:\n' +
+      '\n' +
+      '```rust\n' +
+      'fn main() {\n' +
+      '    println!("Привет!");\n' +
+      '}\n' +
+      '```\n' +
+      '\n' +
+      'В этом примере, `main()` функция является главным байт-кодом для нашего программы. После вызова функции `main()`, программа запустится и выведет строку "Привет!" на экран.\n' +
+      '\n' +
+      'Если вы хотите узнать больше о Rust, можете посмотреть документацию или видео-уроки в сети интернет.'
+    }
+  }
+
+]
